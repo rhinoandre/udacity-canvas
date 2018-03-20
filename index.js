@@ -1,14 +1,6 @@
 const canvas = document.querySelector('#c');
 const context = canvas.getContext('2d');
 
-const image = new Image();
-image.src = '../hollow-knight.jpg';
+context.fillRect(100, 100, 100, 100);
 
-image.onload = () => {
-  console.log('Image loaded');
-  context.drawImage(image, 0, 0, canvas.width, canvas.height);
-};
-
-document.querySelector('#save').addEventListener('click', () => {
-  console.log(canvas.toDataURL());
-});
+context.strokeRect(50, 50, 50, 50);
